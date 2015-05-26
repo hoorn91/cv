@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{comment}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Richard} % Your first name
+\familyname{Hoorn} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{CV}
+\address{Ulvsbygatan 22A}{Karlstad, 64564}
+\mobile{0730833208}
+\email{richard.hoorn91@gmail.com}
+\homepage{https://se.linkedin.com/in/richardhoorn91}{LinkedIn profile} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/picture.jpg} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"Mah all the gods of furious strong be with you as you crunch your opposents, and live like a windrammer as you fuck" - Some guy at the internet}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2010--2015}{Master of Science in Computer Engineering}{Karlstad University}{Karlstad}{}{A program with broad education of the Computer Science topics. The specialization of the education was Computer security and Computer networking. Other important areas were Software Engineering, Datastructures and Algorithms, Programming Languages.}  % Arguments not required can be left empty
+
+\cventry{2007--2010}{Natural Science}{Sundsta-\"{A}lvkullegymnasiet}{Karlstad}{}{Upper Secondary School education in Natural Science with focus on Computer Science.}
+
+\section{Masters Thesis}
+
+\cvitem{Company}{\emph{Sogeti Karlstad}}
+\cvitem{Supervisors}{Mats Persson, \r{A}sa Maspers}
+\cvitem{Assignment}{Google Glass}
+\cvitem{Description}{Investigated if Google Glass had potential to be used in assembly line industries. The work included creating a backend system that was a Web API hosted on Microsoft Azure. Additionaly augmenting an existing Android application so that it could request information from the Web API to be able to download the assembling instructions.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Summer Jobs}
+
+\cventry{2007--Present}{Vacation Replacement}{\textsc{Hammar\"{o}bost\"{a}der}}{Hammar\"{o}}{Dan Pettersson}{For a couple of weeks each summer I assisted Hammar\"{o}bost\"{a}der by replacing their janitor for his vacation.
+\newline{}\newline{}
+Detailed work duties:
+\begin{itemize}
+\item Picking litter in the areas
+\item Oiled Fences, Porches and wooden benches
+\item Responsibility for the office and all the keys
+\item Made sure laundry rooms were in order
+\item Various tasks that needed to be taken care of
+\end{itemize}}
+
+%------------------------------------------------
+
+%\cventry{2010--2011}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+\cventry{2011--2013}{Webmaster}{SEKE}{Karlstad University}{}{Managed the webpage for student society SEKE(Society for Master of Science in Karlstad). The tasks included keeping the plugins, as well as the information, up to date.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\begin{comment}
+\section{Awards}
+
+\cvitem{2011}{School of Business Postgraduate Scholarship}
+\cvitem{2010}{Top Achiever Award -- Commerce}
+\end{comment}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{\textsc{python}, \textsc{Prolog}, \textsc{LISP}}
+\cvitem{Intermediate}{\textsc{java}, \textsc{html}, \textsc{Razor},\textsc{Razor} , \LaTeX, OpenOffice, Linux, Microsoft Windows, FreeBSD, \textsc{php}, \textsc{.NET}, \textsc{ASP.NET}}
+\cvitem{Advanced}{\textsc{C}, \textsc{C\#}, \textsc{C++}}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{comment}
+\section{Communication Skills}
+
+\cvitem{2010}{Oral Presentation at the California Business Conference}
+\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+\end{comment}
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Swedish}{Mothertongue}{}
+\cvitemwithcomment{English}{Advanced}{Conversationally fluent}
+\cvitemwithcomment{French}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistitem{Guitar}
+\cvlistitem{Video Games}
+\cvlistitem{Socialising}
+\cvlistitem{Problem Solving}
+\cvlistitem{Running}
+\cvlistitem{Programming}
+\cvlistitem{Embedded Systems}
+
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+\begin{comment}
+\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Sincerely yours,} % Closing phrase
+\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+Yoyoyo my name is the H. I like it rough and hardcore, and to see futures in balls. Mah all the gods of furious strong be with you as you crunch your opposents, and live like a windrammer as you fuck.
+
+\makeletterclosing % Print letter signature
+\end{comment}
+%----------------------------------------------------------------------------------------
+
+\end{document}
